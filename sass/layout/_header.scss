@@ -1,0 +1,46 @@
+header {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    height: 90px;
+    @media screen and (max-width: 425px){
+        justify-content: center;
+        padding: 0 40px;
+        flex-wrap: wrap;
+     }
+
+    
+    figure {
+        height: 60px;
+        width: 160px;
+        margin: 0;
+        img {
+            object-fit: contain;
+        }
+        img:hover {
+            cursor: pointer;
+        }
+    }
+
+    nav {
+        ol {
+            padding: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    div {
+        @media screen and (max-width: 768px){
+           display: none;
+        }
+        
+    }
+}    
+

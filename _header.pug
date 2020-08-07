@@ -1,0 +1,10 @@
+header 
+  figure
+    a(href="index.html")
+      img(src="images/logo.jpg")
+  nav
+    ol
+      each menu in menus
+        li: a(href=menu+'.html')= menu
+  +socialMedia
+  

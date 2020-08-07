@@ -1,0 +1,25 @@
+-var menus = ['Shop', 'FAQs', 'Contact'];
+-var products = ['Mark III Steps', '30” Fat Cat Cubby', 'Purrfect Perch'];
+
+mixin socialMedia
+  div.socialMedia
+    i.icon-instagram: a 
+    i.icon-facebook: a 
+
+mixin product(image, name)
+  .productArea__product
+        figure: img(src=image, alt="products'image")
+        h2 #{name}
+        a(href= menus[0]+'.html') Learn More
+
+mixin blogpost(image, title, content)
+  .blog-article
+    figure: img(src=image, alt="article's image")
+    h3= title
+    p= content
+
+mixin productShop(image, name, price)
+  .shop__products-product
+    figure: img(src=image, alt="products'image")
+    p #{name}
+    p #{price}

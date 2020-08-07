@@ -1,0 +1,101 @@
+.contact {
+    &__cover {
+        @include cover('../images/coverContact.jpg');
+        color: $colorOscuro;
+        p {
+            font-size: 19px;
+        }
+    }
+    &__area {
+        @include greyBlock;
+        display: flex;
+        padding: 4rem 5rem;
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+        @media screen and (max-width: 450px){
+            padding: 2rem;
+        }
+        // query block
+        &-left {
+            width: 50%;
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }
+            text-align: center;
+            p {
+                font-size: 20px;
+            }
+            small {
+                font-size: 15px;
+            }
+            .contact-form {
+                
+                label {
+                    display: block;
+                    text-align: start;
+                    padding: 25px 0 15px;
+                }
+                div {
+                    display: flex;
+                    
+                    .name {
+                        display: block;
+                        width: 49%;
+                        margin-right: 2%;
+                    }
+                    .lastName {
+                        display: block;
+                        width: 49%;
+                    }
+                    input {
+                        height: 40px;
+                        border: 1px solid $colorPrimario;
+                    }
+                    p {
+                        display: block;
+                        text-align:  start;
+                        margin-top: 10px;
+                    }
+                    
+                }
+                
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid $colorPrimario;
+                }
+
+                .form-button {
+                    @include button($colorPrimario, $colorClaro);
+                    padding: 0;
+                    width: 180px;
+                    height: 55px;
+                    margin-top: 60px;
+                }
+            }
+
+        }
+        &-right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+            @media screen and (max-width: 768px){
+                width: 100%;
+                margin-left: 0px;
+            }
+            figure {
+                background-color:$colorClaro;
+                width: 100%;
+                height: 12rem;
+                margin: 0px;
+                margin-top: 50px;
+                @media screen and (max-width: 450px){
+                    height: 9rem;
+                }
+            }
+        }
+    }
+}

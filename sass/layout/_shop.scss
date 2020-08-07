@@ -1,0 +1,46 @@
+.shop {
+    &__intro {
+        width: 50%;
+        text-align: center;
+        margin: 60px auto;
+        @media screen and (max-width: 768px){
+            width: 80%;
+        }
+        h2 {
+            color: $colorPrimario;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    &__products {
+        @include greyBlock;
+        margin-top: 50px;
+        padding: 0px 70px 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @media screen and (max-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+            padding: 6vw 2em 6vw;
+
+        }
+        @media screen and (max-width: 425px){
+            grid-template-columns: 1fr;
+        }
+        &-product {
+            text-align: left;
+            @media screen and (max-width: 425px){
+                text-align: center;
+            }
+            p {
+                font-size: 20px;
+                margin-left: 20px;
+                @media screen and (max-width: 425px){
+                    font-size: 24px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

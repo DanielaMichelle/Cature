@@ -1,0 +1,41 @@
+extend _plantilla.pug
+block content
+
+  main.contact.cover
+    .contact__cover.cover
+      h1 Contact
+      p: strong CaTure
+      p  2242 University Avenue W.
+      p  St. Paul, MN 55114
+      p: strong Hours
+      p Tuesday – Saturday 
+      p 9am–5pm
+      p: strong Phone
+      p (651) 642-1946
+    .contact__area.cover
+      .contact__area-left
+        p Get in touch with our team here. We are happy and here to help both you, and your furry companion.
+        form.contact-form(action="")
+          label(for="") *Name
+          div 
+            .name
+              input(type="text")
+              p: small First Name
+            .lastName
+              input(type="text")
+              p: small Last Name
+          label(for="") *Email
+          input(type="text")
+          label(for="") *Subject
+          input(type="text")
+          label(for="") *Message
+          input(type="text")
+          input.form-button(type="submit", value="Submit")
+      .contact__area-right 
+        figure: img(src="", alt="ubication")
+      
+    
+
+
+
+        

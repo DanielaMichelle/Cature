@@ -1,0 +1,23 @@
+.faqs {
+    &__Cover {
+        @include cover('../images/mainCover.jpg')
+    }
+    &__Content {
+
+        @include greyBlock;
+        text-align: left;
+        padding: 120px 9rem;
+
+        @media screen and (max-width:768px) {
+            padding: 100px 6rem;
+        };
+
+        @media screen and (max-width:450px) {
+            padding: 75px 2rem;
+        }
+        h4 {
+            margin: 32px 0 16px;
+        }
+    }
+
+}

@@ -1,0 +1,33 @@
+extend _plantilla.pug
+block content
+
+  .mainCover.cover
+        h1 Furniture For Your Cat By Cat Lovers 
+        a Shop Now
+  .productArea.cover
+    .productArea__intro
+      h2 Cat Favorites
+      p Specifically chosen by our cats and yours. We both know how discerning cats can be. This furniture, better dubbed CaTure is what your feline has been missing.
+    .productArea__products
+      +product('images/markSteps/cover.jpg', products[0])
+      +product('images/fatCatCubby/cover.jpg', products[1])
+      +product('images/purrfectPerch/cover.jpg', products[2])
+  .separationCover.cover
+  .blog.cover
+    h2 The cat Blog
+    .blog__articles
+      +blogpost('images/postToys.gif', 'What types of toys are your cats after?', 'Your cat is discerning. And so are you. There are a multitude of toys on the market and available, and that’s why our cat experts have done the research so you can buy the right play-time items with confidence.')
+      +blogpost('images/postFurniture.jpg', 'Cat furniture designed with cats in mind.', 'Our team of cats and artisans have surveyed and connected with cat owners, and cats themselves to find the perfect addition to your home. Something that your cat will love, and cozy up to for years to come.')
+  .contactCover.cover
+    h3 Your cat can't type. So help them subscribe.
+    p Flaunt your opposable thumbs and stay informed on everything Cature
+    form.contactCover__form(action="")
+      input(type="text" placeholder='Email Adress')
+      a Sign Up
+
+      
+        
+      
+
+
+    

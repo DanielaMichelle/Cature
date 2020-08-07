@@ -1,0 +1,91 @@
+.mainCover {
+    @include cover('../images/maincover.jpg');
+    padding: 30vh 20vw;
+    a {
+        @include button($colorClaro, $colorPrimario);
+        font-size: 20px;
+    }
+}
+
+.productArea {
+    @include greyBlock;
+    color: $colorClaro;
+    &__intro {
+        width: 70%;
+        margin: 0 auto;
+        p {
+            font-size: 20px;
+        }
+    }
+    &__products {
+        display: flex;
+        justify-content: center;
+        color: $colorClaro;
+        @media screen and (max-width: 768px){
+            flex-wrap: wrap;
+        }
+        
+    }
+
+    &__product {
+        img {
+            @media screen and (max-width: 768px){
+                width: 75%;
+                
+            }
+            @media screen and (max-width: 425px){
+                width: 80%;
+                
+            }
+        }
+        a {
+           @include button($colorPrimario, $colorClaro)
+        }
+        h2 {
+            font-size: 3vw;
+            @media screen and (max-width: 768px){
+                font-size: 6vw; 
+            }
+        }
+    }
+
+}
+
+.separationCover {
+    @include cover('../images/separation.jpg');
+    height: 100vh;
+}
+
+.blog {
+    @include greyBlock;
+    color: $colorClaro;
+    &__articles{
+        display: flex;
+        padding: 0 15px;
+        @media screen and (max-width: 768px){
+            display: block;
+            
+        }
+        // display-block query
+    }
+}
+
+.contactCover {
+    @include cover('../images/coverContact.jpg');
+    &__form {
+        input {
+            border: 1px solid $colorPrimario;
+            width: 250px;
+            height: 52px;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        
+        a {
+            @include button($colorClaro, $colorPrimario);
+            font-family: $thirdFont;
+        }
+    }    
+}
+
+

@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    @media screen and (max-width: 450px){
+        display: block;
+    }
+    .footer__left {
+        width: 65%;
+        padding: 30px 0 40px 30px;
+    }
+    .footer__right {
+        width: 35%;
+        padding-top: 30px;
+        @media screen and (max-width: 450px){
+           padding-left: 30px;
+           padding-top: 0px;
+        }
+        p {
+            padding-bottom: 10px;
+            a {
+                color: $colorPrimario;
+                text-decoration: underline;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}

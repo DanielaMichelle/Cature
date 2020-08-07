@@ -1,0 +1,84 @@
+@import '../tokens/colors.scss';
+@import '../tokens/typos.scss';
+
+@mixin greyBlock {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: $colorPrimario;
+    color: $colorClaro;
+    padding: 130px 45px;
+}
+
+@mixin cover($imageURL) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-image: url($imageURL);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $colorClaro;
+    padding: 30vh 0;
+}
+
+@mixin button($color, $background) {
+    color: $color;
+    background-color: $background;
+    padding: 17px 27px;
+    font-family: $firstFont;
+    font-size: 16px;
+    font-weight: 500;
+    
+
+}
+
+@each $num, $pixeles in (h1:4rem, h2:3rem, h3:2rem){
+    #{$num} {
+        font-size: $pixeles;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    margin-right: 20px;
+    color: $colorOscuro;
+    text-decoration: none;
+}
+
+// overflow:hidden
+// object-fit:cover
+
+figure {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+
+
